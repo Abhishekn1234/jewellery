@@ -203,7 +203,7 @@ public function update($id) {
 }
 
     public function delete($id) {
-        $this->Product_model->delete_product($id);
+        $this->Product_model->delete($id);
         $this->session->set_flashdata('success', 'Product deleted successfully');
         redirect('products');
     }

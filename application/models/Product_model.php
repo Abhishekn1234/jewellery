@@ -1,7 +1,7 @@
 <?php
 class Product_model extends CI_Model {
     public function __construct() {
-        parent::__construct(); // This is necessary to load the model
+        parent::__construct(); 
         $this->load->database();  
         $this->load->library('session');
     }
